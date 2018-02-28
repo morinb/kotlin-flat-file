@@ -72,6 +72,18 @@
 
     <plugins>
       <plugin>
+        <groupId>external.atlassian.jgitflow</groupId>
+        <artifactId>jgitflow-maven-plugin</artifactId>
+        <version>1.0-m5.1</version>
+        <configuration>
+          <noDeploy>true</noDeploy>
+          <!-- @formatter:off -->
+          <scmCommentPrefix>[Release] </scmCommentPrefix>
+          <!-- @formatter:on-->
+        </configuration>
+      </plugin>
+
+      <plugin>
         <groupId>org.antlr</groupId>
         <artifactId>antlr4-maven-plugin</artifactId>
         <version>4.7.1</version>
@@ -84,8 +96,6 @@
           </execution>
         </executions>
       </plugin>
-
-
       <plugin>
         <groupId>org.jetbrains.kotlin</groupId>
         <artifactId>kotlin-maven-plugin</artifactId>
