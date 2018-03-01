@@ -2,7 +2,7 @@
 <!--
   ~ MIT License
   ~
-  ~ Copyright (c) 2018 BMORIN
+  ~ Copyright (c) 2018 Baptiste
   ~
   ~ Permission is hereby granted, free of charge, to any person obtaining a copy
   ~ of this software and associated documentation files (the "Software"), to deal
@@ -29,7 +29,7 @@
 
   <groupId>com.github.morin.kotlin</groupId>
   <artifactId>kotlin-flat-file</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <packaging>jar</packaging>
 
   <name>kotlin-flat-file</name>
@@ -38,6 +38,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <kotlin.version>1.2.21</kotlin.version>
     <junit.version>4.12</junit.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -92,6 +94,11 @@
             <goals>
               <goal>antlr4</goal>
             </goals>
+            <configuration>
+              <outputDirectory>
+                ${project.build.directory}/generated-sources/antlr4/com/github/morinb/kotlin/flatfile/lexer
+              </outputDirectory>
+            </configuration>
           </execution>
         </executions>
       </plugin>
@@ -130,6 +137,7 @@
           </execution>
         </executions>
       </plugin>
+
     </plugins>
   </build>
 

@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (c) 2018 BMORIN
+ * Copyright (c) 2018 Baptiste
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -24,8 +24,8 @@
 
 package com.github.morin.kotlin.flatfile.model
 
-import KffLexer
-import KffParser
+import com.github.morin.kotlin.flatfile.lexer.KffLexer
+import com.github.morin.kotlin.flatfile.lexer.KffParser
 import org.antlr.v4.runtime.CharStream
 import org.antlr.v4.runtime.CommonTokenStream
 
