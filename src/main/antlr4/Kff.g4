@@ -1,5 +1,12 @@
 grammar Kff;
 
+@header {
+package com.github.morin.kotlin.flatfile.lexer;
+
+import com.github.morin.kotlin.flatfile.lexer.*;
+
+}
+
 configs : config+;
 
 config : TYPE '{' entry+ '}';
