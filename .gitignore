@@ -85,9 +85,14 @@ fabric.properties
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-/.idea/sonarlint/
-/.idea/sbt.xml
-/.idea/saveactions_settings.xml
+.idea/sonarlint/
+.idea/sbt.xml
+.idea/saveactions_settings.xml
 
 # Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
 !/.mvn/wrapper/maven-wrapper.jar
+.idea/codeStyles/Project.xml
+.idea/dbnavigator.xml
+*.iml
+.idea/misc.xml
+.idea/sonar*
